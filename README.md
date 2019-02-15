@@ -1,2 +1,4 @@
-# ibi
-canonical cross-platform interactive brainfuck interpreter
+# IBI
+Interactive Brainfuck Interpreter
+
+
