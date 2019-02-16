@@ -13,16 +13,15 @@ Interactive Brainfuck Interpreter
   - Stack based loops (to speed up runtime execution)
   - EOF leaves the cell value unchanged
   - New line on I/O is 10 ('\n')
-  - "#" prints debug info in format: cell #<Number>: <Value>
+  - extra "#" command prints debug info
 
 # Usage
 
   - linux: ./ibi or ./ibi [filename]
   - windows: ibi.exe or ibi.exe [filename]
 
-# Release
-
 # Build
 
   - linux: gcc ibi.c -o ibi
   - windows: gcc.exe ibi.c -o ibi
+
