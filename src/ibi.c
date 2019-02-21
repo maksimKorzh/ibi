@@ -120,7 +120,11 @@ void ExecuteSource()
 
                 for(int i = 0; i < 20; i++)
                 {
-                    printf(" %d  ", tape[cell + i]);
+                    if(tape[cell + i] < 10)
+                        printf(" %d  ", tape[cell + i]);
+                    
+                    if(tape[cell + i] >= 10)
+                        printf(" %d ", tape[cell + i]);
                 }
 
                 printf("\n");
