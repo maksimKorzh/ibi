@@ -104,6 +104,28 @@ void ExecuteSource()
             case '[': if(!tape[cell]) source_ptr=loops[source_ptr]; break;
             case ']': if(tape[cell]) source_ptr=loops[source_ptr]; break;
             case '#': printf(" cell #%d: '%d'\n", cell, tape[cell]);
+            case '@':
+                printf("\n");
+
+                for(int i = 0; i < 20; i++)
+                {
+                    if((cell + i) < 10)
+                        printf("#%d  ", cell + i);
+                    
+                    else if((cell + i) >= 10)
+                        printf("#%d ", cell + i);
+                }
+
+                printf("\n");
+
+                for(int i = 0; i < 20; i++)
+                {
+                    printf(" %d  ", tape[cell + i]);
+                }
+
+                printf("\n");
+
+                break; 
         }
     }
 }
